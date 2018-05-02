@@ -62,10 +62,10 @@ $ go get -v github.com/jpillora/cloud-torrent
   11. Follow the prompts to set a new password
   12. Run `cloud-torrent` with:
 
-    docker run --name ct -d -p 63000:63000 \
+    docker run --name ct -d -p 80:80 \
       --restart always \
       -v /root/downloads:/downloads \
-      jpillora/cloud-torrent --port 63000
+      ldy188005954/cloud-torrent --port 80
 
   13. Visit `http://<IP Address from email>:63000/`
   14. **OPTIONAL** In addition to `--port` you can specify the options below
