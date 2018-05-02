@@ -65,7 +65,7 @@ $ go get -v github.com/jpillora/cloud-torrent
     docker run --name ct -d -p 80:80 \
       --restart always \
       -v /root/downloads:/downloads \
-      ldy188005954/cloud-torrent --port 80
+      jpillora/cloud-torrent --port 80
 
   13. Visit `http://<IP Address from email>:63000/`
   14. **OPTIONAL** In addition to `--port` you can specify the options below
